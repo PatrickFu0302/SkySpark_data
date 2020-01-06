@@ -6,4 +6,4 @@ The UBC EWS [SkySpark platform](http://energy.ubc.ca/energy-and-water-data/skysp
 
 The InfluxDB can be accessed using [command line interface](https://docs.influxdata.com/influxdb/v1.7/tools/shell/) or [client libraries](https://docs.influxdata.com/influxdb/v1.7/tools/api_client_libraries/). The Python notebook `SKYSPARK InfluxDB Tutorial.ipynb` is a tutorial for aceessing and visualizing the data in Python 3.
 
-A Grafana visualization is avalable [here](https://udl.grafana.net/d/bMRdlVaWz/skyspark?orgId=1&from=1576273851405&to=1576878651405&panelId=2&fullscreen) with username: udl and password: udl2020 for public log-ins. However, the data values are stored as strings and Grafana can only visualize the aggregated values such as `count`.
+A Grafana visualization is avalable [here](https://udl.grafana.net/d/bMRdlVaWz/skyspark?orgId=1&from=1576273851405&to=1576878651405&panelId=2&fullscreen) with username `udl` and password `udl2020` for public log-ins. However, the data values are stored as strings and Grafana can only visualize the aggregated values such as `count`.
