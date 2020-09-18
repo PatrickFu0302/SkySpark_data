@@ -16,10 +16,10 @@ A Grafana visualization is avalable [here](https://udl.grafana.net/d/bMRdlVaWz/s
 **Notes**
 1. For each data point on SkySpark, the `id` in `POINT` is the same as the `uniqueID` in `READINGS`.
 2. A SkySpark data point can have up to 155 tags (recorded in the `POINT` measuremt). It usually has the following tagging information so we also record these tags in `READINGS` to simplify queries.
-  - siteRef:
-  - groupRef:
-  - typeRef:
-  - equipRed:
-  - navName:
-  - unit:
+  * siteRef:
+  * groupRef:
+  * typeRef:
+  * equipRed:
+  * navName:
+  * unit:
 
