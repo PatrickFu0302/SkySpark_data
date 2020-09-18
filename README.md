@@ -9,4 +9,4 @@ The InfluxDB can be accessed using [command line interface](https://docs.influxd
 A Grafana visualization is avalable [here](https://udl.grafana.net/d/bMRdlVaWz/skyspark?orgId=1&from=1576273851405&to=1576878651405&panelId=2&fullscreen). Users can click on “Panel Title” and choose “Edit”, which allows them to edit the SQL query and select a time range for the data. However, the data values are stored as strings and Grafana can only visualize the aggregated values such as `count`.
 
 ## Database Structure
-![][https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/SKYSPARK%20v7%20Structure.JPG]
+![](https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/SKYSPARK%20v7%20Structure.JPG)
