@@ -14,16 +14,13 @@ A Grafana visualization is avalable [here](https://udl.grafana.net/d/bMRdlVaWz/s
 **[InfluxDB concepts](https://docs.influxdata.com/influxdb/v1.8/concepts/)**: database, point, measurement, tag, field, timestamp
 
 **Notes**
+
 1. For each data point on SkySpark, the `id` in `POINT` is the same as the `uniqueID` in `READINGS`.
-2. A SkySpark data point can have up to 155 tags (recorded in the `POINT` measuremt). It usually has the following tagging information so we also record these tags in `READINGS` to simplify queries.
-  * siteRef:
-  * groupRef:
-  * typeRef:
-  * equipRed:
-  * navName:
-  * unit:
-1. Item
-2. Item
-   * Mixed
-   * Mixed  
-3. Item
+2. A SkySpark data point can have up to 155 tags (recorded in the `POINT` measuremt). Each data point usually has the following tagging information so we also record these tags in `READINGS` to simplify queries.
+   * siteRef: a site is a facility (usually a building) 
+   * groupRef: a group refers to a system or a floor in a building
+   * typeRef: type of the data point  
+   * equipRed: information on the equipment
+   * navName: information interpreted and added by SkySpark managers
+   * unit: the unit of the reading value
+3. Timestamps are in UTC on InfluxDB: `time` in `READINGS` is the time the reading values are recorded, and `time` in `POINT` is a contant value to allow overwriting the existing data (this happens at 2am daily).
