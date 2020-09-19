@@ -23,4 +23,9 @@ A Grafana visualization is avalable [here](https://udl.grafana.net/d/bMRdlVaWz/s
    * equipRed: information on the equipment
    * navName: information interpreted and added by SkySpark managers
    * unit: the unit of the reading value
-3. Timestamps are in UTC on InfluxDB: `time` in `READINGS` is the time the reading values are recorded, and `time` in `POINT` is a contant value to allow overwriting the existing data (this happens at 2am daily).
+3. Each data point has the reading values stored in one of the following fields in `READINGS`:
+   * val_num: float values
+   * val_bool: boolean values
+   * val_str: string values
+   * val_unk: value format unknown and stored as string
+4. Timestamps are in UTC on InfluxDB: `time` in `READINGS` is the time the reading values are recorded, and `time` in `POINT` is a contant value to allow overwriting the existing data (this happens at 2am daily).
