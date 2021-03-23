@@ -6,7 +6,7 @@
 </p>
 
 ## InfluxDB 2.0 Instance
-Public users (read permissions only) can log in to our **InfluxDB 2.0 User Interface** http://206.12.92.81:8086/ with the following credentials
+Public users (read permissions only) can log in to our [**InfluxDB 2.0 User Interface**](http://206.12.92.81:8086/) with the following credentials
 - Username:`public02`
 - Password:`public02`
 
