@@ -24,10 +24,7 @@ The `SKYSPARK` database is a hitorical copy of the SkySpark data in 2020, and th
 
 Currently, UDL is developing the database  `SKYSPARK2` which will provide cleaner data on more buildings.
 
-**[InfluxDB concepts](https://docs.influxdata.com/influxdb/v2.0/reference/key-concepts/)**: database, point, measurement, tag, field, timestamp
-
-**Notes**
-
+**[InfluxDB concepts]**(https://docs.influxdata.com/influxdb/v2.0/reference/key-concepts/): database, point, measurement, tag, field, timestamp
 1. For each data point on SkySpark, the `id` in `POINT` is the same as the `uniqueID` in `READINGS`.
 2. A SkySpark data point can have up to 155 tags (recorded in the `POINT` measuremt). Each data point usually has the following tagging information so we also record these tags in `READINGS` to simplify queries.
    * siteRef: a site is a facility (usually a building) 
