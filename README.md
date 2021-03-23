@@ -8,10 +8,9 @@
 ## InfluxDB 2.0 Instance
 Public users (read permissions only) can log in to our [**InfluxDB 2.0 User Interface**](http://206.12.92.81:8086/) with the following credentials
 - Username:`public02`
-- Password:`public02`
+- Password: contact UDL (info@urbandatalab.io) to request password
 
-Public users can also access this InfluxDB instance from [InfluxDB command line interface](https://docs.influxdata.com/influxdb/v2.0/) or [InfluxDB API client libraries](https://docs.influxdata.com/influxdb/v2.0/tools/client-libraries/) using this authorization token
-`omUybYZ3QkGvuXXy0VwT-7hoO2SEFzhckXJ5k32K_GvG47yHQAi9JzZ1bii6r1HD5NKux3ZhHlKAyUfj6i61bA==` 
+Public users can also access this InfluxDB instance from [InfluxDB command line interface](https://docs.influxdata.com/influxdb/v2.0/) or [InfluxDB API client libraries](https://docs.influxdata.com/influxdb/v2.0/tools/client-libraries/) using an authorization token - Please contact UDL (info@urbandatalab.io) to request a token.
 
 [The Python tutorial](https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/SKYSPARK2%20Tutorial%20v1.ipynb) demonstrates querying the InfluxDB database using the `influxdb-client` Python module. Please [contact UDL](https://urbandatalab.io/) if you have any questions.
 
