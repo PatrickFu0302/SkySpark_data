@@ -2,7 +2,7 @@
 [UBC's SkySpark IoT platform](https://skyspark.energy.ubc.ca/), managed by UBC Energy and Water Services (EWS), collects data on weather and UBC buildings every 15 minutes. The Urban Data Lab (UDL) is streaming the SkySpark data into an InfluxDB instance to increase its accessibility and usability.
 
 <p align="center">
-  <img width="600" src="https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/images/InfluxDB_UI_Example.PNG">
+  <img width="900" src="https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/images/InfluxDB_UI_Example.PNG">
 </p>
 
 ## InfluxDB 2.0 Instance
@@ -19,7 +19,7 @@ to access this InfluxDB database from [InfluxDB command line interface](https://
 The `SKYSPARK` database is a hitorical copy of the SkySpark data in 2020, and the live streaming has been terminated. Please refer to the diagram below for its structure.
 
 <p align="center">
-  <img width="600" src="https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/images/SKYSPARK%20Structure.JPG">
+  <img width="900" src="https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/images/SKYSPARK%20Structure.JPG">
 </p>
 
 Currently, UDL is developing the database  `SKYSPARK2` which will provide cleaner data on more buildings.
