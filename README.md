@@ -1,17 +1,22 @@
-# SkySpark_data
-The Urban Data Lab provides access to 15-minute data on UBC buildings mirrored from the UBC EWS SkySpark platform.
+# About the Data
+[UBC's SkySpark IoT platform](https://skyspark.energy.ubc.ca/), managed by UBC Energy and Water Services (EWS), collects data on weather and UBC buildings every 15 minutes. The Urban Data Lab (UDL) is streaming the SkySpark data into an InfluxDB instance to increase its accessibility and usability.
 
-## About the Data
-The UBC EWS [SkySpark platform](http://energy.ubc.ca/energy-and-water-data/skyspark/), managed by Energy and Water Services (EWS) of the University of British Columbi (UBC), collects data on energy and water use, HVAC equipment, and  weather information every 15 minutes. UBC Urban Data Lab (UDL) mirrored the SkySpark database into an InfluxDB instance to increase the accessibility and usability of the data.
+## InfluxDB 2.0 Instance
+Public users (read permissions only) can log in to our **InfluxDB 2.0 User Interface** http://206.12.92.81:8086/ with the following credentials
+- Username:`public02`
+- Password:`public02`
 
-The InfluxDB can be accessed using [command line interface](https://docs.influxdata.com/influxdb/v1.7/tools/shell/) or [client libraries](https://docs.influxdata.com/influxdb/v1.7/tools/api_client_libraries/). The Python notebook `SKYSPARK v7 Tutorial.ipynb` is a tutorial for aceessing and exploring the data in Python 3.
+Public users can also use this authorization token `omUybYZ3QkGvuXXy0VwT-7hoO2SEFzhckXJ5k32K_GvG47yHQAi9JzZ1bii6r1HD5NKux3ZhHlKAyUfj6i61bA==` to access this InfluxDB database from [InfluxDB command line interface](https://docs.influxdata.com/influxdb/v2.0/) or [InfluxDB API client libraries](https://docs.influxdata.com/influxdb/v2.0/tools/client-libraries/). 
 
-A Grafana visualization is avalable [here](https://udl.grafana.net/d/bMRdlVaWz/skyspark?orgId=1&from=1576273851405&to=1576878651405&panelId=2&fullscreen). Users can click on “Panel Title” and choose “Edit”, which allows them to edit the SQL query and select a time range for the data. However, the data values are stored as strings and Grafana can only visualize the aggregated values such as `count`.
+[The Python tutorial](https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/SKYSPARK2%20Tutorial%20v1.ipynb) demonstrates querying the InfluxDB database using the `influxdb-client` Python module. Please [contact UDL](https://urbandatalab.io/) if you have any questions.
 
 ## Database Structure
+The `SKYSPARK` database is a hitorical copy of the SkySpark data in 2020, and the live streaming has been terminated. Please refer to the diagram below for its structure.
 ![](https://github.com/UBC-UrbanDataLab/SkySpark_data/blob/master/SKYSPARK%20v7%20Structure.JPG)
 
-**[InfluxDB concepts](https://docs.influxdata.com/influxdb/v1.8/concepts/)**: database, point, measurement, tag, field, timestamp
+Currently, UDL is developing the database  `SKYSPARK2` which will provide cleaner data on more buildings.
+
+**[InfluxDB concepts](https://docs.influxdata.com/influxdb/v2.0/reference/key-concepts/)**: database, point, measurement, tag, field, timestamp
 
 **Notes**
 
